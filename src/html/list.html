@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="container">
+    <header class="header" id="back">
+        <a href="###">返回</a>
+        <span id="counts"></span>343酒店
+    </header>
+        <div class="cal_list">
+            <p><label>入住</label><input type="hidden" id="date_in">&nbsp;&nbsp;<span id="inText"></span></p>
+            <p><label>离店</label><input type="hidden" id="date_out">&nbsp;&nbsp;<span id="outText"></span></p>
+            <h2 id="modify" data-type="list">修改</h2>
+        </div>
+        <div class="hotel-box" id="hotel_scroll">
+            <div class="scroll">
+                <!--信息列表-->
+                <div class="hotel_list" id="hotel_list">
+                    <!--<div class="hotel_rows">
+                       <a href="">
+                           <dl>
+                               <dt>
+                                   <img src="../img/01.jpg" alt="">
+                               </dt>
+                               <dd>
+                                   <h2>北京天安瑞安酒店</h2>
+                                   <ul>
+                                       <li class="pf">4.5分</li>
+                                       <li>礼</li>
+                                       <li>促</li>
+                                       <li>返</li>
+                                   </ul>
+                                   <p class="ip">三星</p>
+                                   <address>北京市海淀区</address>
+                               </dd>
+                           </dl>
+                       </a>
+                       <div class="aslide">
+                           <p class="price">￥550起</p>
+                           <p class="distance">220km</p>
+                       </div>
+                   </div>-->
+                </div>
+                <!--加载更多-->
+                <div class="load_more">
+                    <span>点击记载更多</span>
+                </div>
+                <!--tipbox-->
+                <div class="tipbox" id="tipbox">
+                    暂无符合条件的记录
+                </div>
+            </div>
+        </div>
+</div>
+<!--筛选的内容-->
+<section class="item_layer" id="item_layer">
+    <div id="sort" class="lay-child"></div>
+    <div id="price" class="lay-child"></div>
+    <div id="brand" class="lay-child"></div>
+    <div id="star" class="lay-child"></div>
+    <input type="hidden" name="order" id="order">
+    <input type="hidden" name="min" id="min">
+    <input type="hidden" name="max" id="max">
+    <input type="hidden" name="brand" id="brand">
+    <input type="hidden" name="star" id="star">
+</section>
+<div class="ftnav" id="ftnav">
+    <nav>
+        <a href="#sort">排序</a>
+        <a href="#price">价格</a>
+        <a href="#brand">品牌</a>
+        <a href="#star">星级</a>
+    </nav>
+</div>
+<script src="../lib/require.js" data-main="../main"></script>
+</body>
+</html>

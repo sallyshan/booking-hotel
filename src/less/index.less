@@ -1,0 +1,193 @@
+/*首页  样式*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+   .flexCenter;
+}
+.banner{
+	height: 130px;
+	.one{
+		background: url("../img/1.jpg") no-repeat center center;
+		background-size: 100% 100%;
+	}
+	.two{
+		background: url("../img/2.jpg") no-repeat center center;
+		background-size: 100% 100%;
+	}
+	.three{
+		background: url("../img/3.jpg") no-repeat center center;
+		background-size: 100% 100%;
+	}
+	.four{
+		background: url("../img/4.jpg") no-repeat center center;
+		background-size: 100% 100%;
+	}
+}
+.index-wrapper{
+	.right-arrow{
+	.right-arrow(@right:1rem,@top:30px)
+	}
+	.circle{
+	.circle(@top:30px,@left:.5rem,@color:@borderColor)
+	}
+	color: #333;
+	background: #ffffff;
+	padding-left: 12px;
+     @extend .bb;
+	.index-item{
+		height: 70px;
+		width: 100%;
+		padding-left: 1.2rem;
+		line-height: 70px;
+	    @extend .bb;
+		font-size: .8rem;
+		&:first-child{
+			&:after{
+				right: 85px;
+			}
+		}
+		&:last-child{
+			border: none;
+		}
+		span{
+			float: left;
+
+		}
+		.date-in,.date-out{
+			width: 70%;
+		}
+	}
+
+	.local-place{
+		.local-city{
+			width: 50%;
+			height: 100%;
+		}
+		span{
+			float: left;
+		}
+	}
+	.location{
+		position: absolute;
+		right: 0;
+		height: 100%;
+	    @extend .bl;
+	}
+	span{
+		padding: 0 5px;
+	}
+}
+.left-arrow{
+	.left-arrow(@left:1rem,@top:15px);
+	position: absolute;
+	width: 50px;
+	height: 44px;
+	left: 0;
+}
+.plugin{
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	.city-content{
+		position: relative;
+	}
+	.search-area{
+		input{
+			padding: 10px;
+			width: 100%;
+
+		}
+		::-webkit-input-placeholder{
+			font-size: .8rem;
+		}
+	}
+	.cont-title{
+		background: @backColor;
+		height: 24px;
+		line-height: 24px;
+		font-size: .75rem;
+		color: @fontColor;
+		text-indent: .75rem;
+	}
+	ol{
+		li{
+			float: left;
+			width: 10%;
+			text-align: center;
+			line-height: 2;
+			font-size: .8rem;
+		}
+	}
+	.hot-city{
+		span{
+			float: left;
+			width: 33.33%;
+			text-align: center;
+			line-height: 2;
+			font-size: .8rem;
+		}
+	}
+
+	.city-detail{
+		span{
+			float: left;
+			width: 25%;
+			text-align: center;
+			line-height: 2;
+			font-size: .8rem;
+		}
+	}
+
+
+}
+.plugin{
+	.search-result{
+		display: none;
+		position: absolute;
+		top: 115px;
+		bottom: 0;
+		background: #ffffff;
+		width: 100%;
+		overflow: auto;
+		span{
+			display: block;
+			width: 100%;
+			line-height: 2;
+		    @extend .bb;
+			text-indent: 1rem;
+		}
+	}
+}
+.search-btn{
+	background:#24AEF2;
+	width:98%;
+	height:44px;
+	line-height: 44px;
+	margin:10px auto;
+	text-align: center;
+	color:#FFF;
+}
+.search-btn span{
+	width:14px;
+	height:14px;
+	border-radius: 50%;
+	border:2px solid #FFF;
+	display: inline-block;
+	position: relative;
+	margin-right:5px;
+	&:after{
+        content: '';
+		position: absolute;
+		right:-4px;
+		bottom:-2px;
+		transform: rotate(45deg);
+		width:4px;
+		height:2px;
+		background: #FFF;
+	}
+}

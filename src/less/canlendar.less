@@ -1,0 +1,27 @@
+.calendar{
+   @extend .clearfix;
+ /* padding-top: 45px;*/
+  height: 100%;
+  overflow: auto;
+
+  z-index:9999;
+  .calendar-date{
+    margin-top: 20px;
+  }
+  .ym{
+    text-align: center;
+    font-size: .9rem;
+    color: #000;
+    font-family: sans-serif;
+  }
+  .cal-item,.cal-week span{
+    float: left;
+    width: 14.2857%;
+    line-height: 2;
+    font-size: .8rem;
+    text-align: center;
+    &.to-gray{
+      color:#cce7f3;
+    }
+  }
+}
